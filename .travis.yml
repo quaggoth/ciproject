@@ -16,7 +16,7 @@ script:
 
 deploy:
   provider: releases
-  api_key: "cf13db339fc94cf878e479224a427e1e3300e60f"
+  api_key: "d8f45c8d231e79787b7bb8e075c16d5eccb0e79c"
   file: "ciproject"
   skip_cleanup: true
   on:
