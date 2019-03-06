@@ -13,3 +13,11 @@ git:
 script:
   - echo Building...
   - go build github.com/quaggoth/ciproject
+
+deploy:
+  provider: releases
+  #api_key: "GITHUB OAUTH TOKEN"
+  file: "ciproject"
+  skip_cleanup: true
+  on:
+    tags: true
