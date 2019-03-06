@@ -16,7 +16,7 @@ script:
 
 deploy:
   provider: releases
-  #api_key: "GITHUB OAUTH TOKEN"
+  api_key: "cf13db339fc94cf878e479224a427e1e3300e60f"
   file: "ciproject"
   skip_cleanup: true
   on:
