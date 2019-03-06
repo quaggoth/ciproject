@@ -11,4 +11,5 @@ git:
   #- Install stuff
  
 script:
+  - echo Building...
   - go build github.com/quaggoth/ciproject
