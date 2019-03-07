@@ -12,8 +12,10 @@ git:
  
 script:
   - echo Building...
-  - test ! -d /home/travis/gopath/src/github.com/quaggoth && mv /home/travis/gopath/src/github.com/* /home/travis/gopath/src/github.com/quaggoth
-
+  - |
+    if [ ! -d /home/travis/gopath/src/github.com/quaggoth ]; then
+      mv /home/travis/gopath/src/github.com/* /home/travis/gopath/src/github.com/quaggoth
+    fi
   - go build github.com/quaggoth/ciproject
 
 deploy:
